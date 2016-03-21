@@ -14,5 +14,5 @@ Its a predefined count down timer.
 
 
 
-<img src="https://cloud.githubusercontent.com/assets/7248099/13917484/11d3685e-ef87-11e5-8733-df7fbe7c8a69.png width="300">
+<img src="https://cloud.githubusercontent.com/assets/7248099/13917484/11d3685e-ef87-11e5-8733-df7fbe7c8a69.png" width="300">
 
