@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         btnStop = (Button)findViewById(R.id.btnStop);
         textViewTime = (TextView)findViewById(R.id.textViewTime);
 
-        textViewTime.setText("00:01:00");
+        textViewTime.setText("00:01:00");   //initial text
 
-        timer = new CounterClass(60000, 1000);
+        timer = new CounterClass(60000, 1000); // constructor initialization (1 min countertime,update rate per seconds)
     }
 
 
@@ -36,31 +36,14 @@ public void hello(View v)
 
 {
     if(v==btnStart) {
-
-
-
-      timer.start();
-
-
-
+      timer.start();  //to start counter
     }
 
-    if(v==btnStop)
-    {
-
-           timer.cancel();
-
+    if(v==btnStop) {
+        timer.cancel(); // to stop counter
     }
 
-
-
-
     }
-
-
-
-
-
 
 
 
@@ -77,7 +60,6 @@ public void hello(View v)
         @Override
         public void onTick(long millisUntilFinished) {
             millis = millisUntilFinished;
-
             String hms = String.format("%02d:%02d:%02d",TimeUnit.MILLISECONDS.toHours(millis),
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
