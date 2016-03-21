@@ -3,7 +3,7 @@ Simple count down Counter
 
 Its a predefined count down timer.
 
-
+Project discription: https://sites.google.com/site/puneetverma24android/apps/counter
 
 
 <img src="https://cloud.githubusercontent.com/assets/7248099/13917483/114093a8-ef87-11e5-8eca-1bfae90bb9c8.png" width="300">
